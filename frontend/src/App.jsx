@@ -3,12 +3,14 @@ import {Routes, Route} from 'react-router'
 import './App.css'
 import Home from "./components/Home"
 import Create from "./components/create"
+import Navbar from './components/navbar/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Navbar/>
       <Routes>
           <Route path="" element={<Home/>}/>
           <Route path="/create" element={<Create/>}/>
